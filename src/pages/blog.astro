@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 import '../styles/global.css'
 ---
 
@@ -11,12 +13,8 @@ import '../styles/global.css'
 		<title>My Astro Blog</title>
 	</head>
 	<body>
-        
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
-        
-        <h1>Hey! this is my blog</h1>
+        <Header/>
+         <h1>Hey! this is my blog</h1>
 
         <p>Here I will update my journey learning Astro, stay tuned!</p>
 
@@ -25,6 +23,9 @@ import '../styles/global.css'
             <li> <a href="/posts/post-2">Entry #2</a></li>
             <li> <a href="/posts/post-3">Entry #3</a></li>
         </ul>
-      
+        <Footer/>
+        <script>
+			import '../scripts/menu.js';
+		</script>
 	</body>
 </html>
